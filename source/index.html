@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тестовое задание</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="header__title">Тестовое ТКБ</h1>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="table">
+        <aside class="table__menu menu">
+          <h2 class="menu__title">Меню</h2>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Пункт 1</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Пункт 2</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Пункт 3</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Пункт 4</a>
+            </li>
+          </ul>
+        </aside>
+        <article class="table__wrapper">
+          <form method="post" class="form" action="https://echo.htmlacademy.ru/">
+            <div class="form__search">
+              <label>
+                <input class="form__input" type="search" minlength="3" placeholder="Поиск">
+              </label>
+            </div>
+            <div class="form__wrapper">
+              <div class="form__box" data-number="0">
+                <label>
+                  <span class="form__label-text">ФИО</span>
+                  <input class="form__input" type="text" name="name" minlength="5" placeholder="ФИО" required>
+                </label>
+                <label>
+                  <span class="form__label-text">Должность</span>
+                  <select name="speciality" class="form__input">
+                    <option value="Analyst">Аналитик</option>
+                    <option value="Manager" selected>Менеджер</option>
+                    <option value="programmer">Програмист</option>
+                    <option value="lawyer">Юрист</option>
+                  </select>
+                </label>
+                <label><span class="form__label-text">Возраст</span>
+                  <input class="form__input" type="number" name="age" min="10" max="100" placeholder="Возраст" required>
+                </label>
+                <label>
+                  <span class="form__label-text">Комментарий</span>
+                  <textarea class="form__input" name="comment" rows="5" cols="30"></textarea>
+                </label>
+                <button class="form__delete" data-btn="0" type="button">Удалить</button>
+              </div>
+            </div>
+            <div class="form__btn-box">
+              <button class="form__button button-submit" type="submit">Отправить</button>
+              <button class="form__button button-add" type="button">Добавить</button>
+            </div>
+          </form>
+        </article>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <a href="https://spb.hh.ru/resume/62fc3026ff046435560039ed1f444e44337971" class="footer__link">Мое резюме</a>
+      <a href="" class="footer__link">Сылка на GitHub</a>
+      <a class="footer__link" href="mailto:i.denisdenis1991@gmail.com">i.denisdenis1991@gmail.com.ru</a>
+    </div>
+  </footer>
+  <script src="js/main.min.js"></script>
+  <template id="table-row">
+    <div class="form__box">
+      <label>
+        <span class="form__label-text">ФИО</span>
+        <input class="form__input" type="text" name="name" minlength="3" placeholder="ФИО" required>
+      </label>
+      <label>
+        <span class="form__label-text">Должность</span>
+        <select name="speciality" class="form__input">
+          <option value="Analyst">Аналитик</option>
+          <option value="Manager">Менеджер</option>
+          <option value="programmer">Програмист</option>
+          <option value="lawyer">Юрист</option>
+        </select>
+      </label>
+      <label><span class="form__label-text">Возраст</span>
+        <input class="form__input" type="number" name="age" min="10" max="100" placeholder="Возраст" required>
+      </label>
+      <label>
+        <span class="form__label-text">Комментарий</span>
+        <textarea class="form__input" rows="5" cols="30"></textarea>
+      </label>
+      <button class="form__delete" type="button">Удалить</button>
+    </div>
+  </template>
+</body>
+</html>

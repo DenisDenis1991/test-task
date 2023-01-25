@@ -1,0 +1,21 @@
+.footer {
+  padding: 50px;
+  background-color: #faebd7;
+
+  & .container {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 40px;
+  }
+}
+
+.footer__link {
+  font-size: 20px;
+  line-height: 24px;
+
+  &:hover,
+  &:focus {
+    color: $color-torch-red;
+  }
+}
