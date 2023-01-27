@@ -37,7 +37,7 @@
           <form method="post" class="form" action="https://echo.htmlacademy.ru/">
             <div class="form__search">
               <label>
-                <input class="form__input" type="search" minlength="3" placeholder="Поиск">
+                <input class="form__input" type="search" name="search" minlength="3" placeholder="Поиск">
               </label>
             </div>
             <div class="form__wrapper">
@@ -86,7 +86,7 @@
     <div class="form__box">
       <label>
         <span class="form__label-text">ФИО</span>
-        <input class="form__input" type="text" name="name" minlength="3" placeholder="ФИО" required>
+        <input class="form__input" type="search" name="search" minlength="3" placeholder="ФИО" required>
       </label>
       <label>
         <span class="form__label-text">Должность</span>
@@ -102,7 +102,7 @@
       </label>
       <label>
         <span class="form__label-text">Комментарий</span>
-        <textarea class="form__input" rows="5" cols="30"></textarea>
+        <textarea class="form__input" name="comment" rows="5" cols="30"></textarea>
       </label>
       <button class="form__delete" type="button">Удалить</button>
     </div>
